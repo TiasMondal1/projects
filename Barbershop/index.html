@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Barber shop website</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <section id="banner">
+            <img src="Barber_Shop_img/logo.png" class="logo">
+            <div class="banner-text">
+                <h1>Hair studio</h1>
+                <p>Style your hair and your life</p>
+                <div class="banner-btn">
+                    <a href="#"> <span></span> Find out</a>
+                    <a href="#"> <span></span> Read more</a>
+                </div>
+            </div>
+        </section>
+
+        <div id="sidenav">
+            <nav>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">FEATURES</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">TESTIMONIALS</a></li>
+                    <li><a href="#">MEET US</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="manubtn">
+            <img src="Barber_Shop_img/menu.png" id="menu">
+        </div>
+
+        <script>
+            var menubtn = document.getElementById("menubtn")
+            var sidenav = document.getElementById("sidenav")
+            var menu = document.getElementById("menu")
+
+            sidenav.style.right = "-250px";
+
+            menubtn.onclick = function() {
+                if (sidenav.style.right == "-250px") {
+                    sidenav.style.right = "0";
+                    menu.src = "Barber_Shop_img/close.png";
+                }
+                else {
+                    sidenav.style.right = "-250px";
+                    menu.src = "Barber_Shop_img/close.png";
+                }
+            }
+        </script>
+        
+    </body>
+</html>
